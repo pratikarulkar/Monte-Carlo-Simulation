@@ -6,8 +6,8 @@ the ant is trying to get from point A to point B in a grid. The coordinates of p
 
 Once ant starts moving, there are four options, it can go left, right, up or down (no diagonal movement allowed). If any of these four options satisfy the following:
 
-    The new point should still be within the boundaries of the n×nn \times nn×n grid
-    The new point should not be visited previously.
+    1.The new point should still be within the boundaries of the n×n grid
+    2.The new point should not be visited previously.
 
 If P is the probability of the ant reaching point B for a 6×6 grid, use Monte Carlo simulation to compute P.
 

@@ -13,4 +13,21 @@ If P is the probability of the ant reaching point B for a 6×6 grid, use Monte C
 
 Details and Assumptions
 
-    Assume 10,000 simulations are sufficient enough to compute PPP.
+    Assume 10,000 simulations are sufficient enough to compute P.
+
+#######################################################################################################################################
+
+Result: With the increasing size of the grid it is unlikely that ant would be able to reach point B
+(The python code for the same is provided in the same repository.)
+
+        ￼gridsize(n)           Probability_of reaching_to_point_B
+            1                                  1
+            2                             0.9046
+            3                             0.7207
+            4                             0.5546
+            5                             0.4254
+            6                             0.3311
+            7                             0.2581
+            8                             0.1984
+            9                             0.1566
+           10                             0.1175

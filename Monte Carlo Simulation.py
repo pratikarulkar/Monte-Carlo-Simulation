@@ -1,3 +1,6 @@
+import numpy as np
+import random
+
 
 ##function to get next position for an ant
 def updatingpos(x,y):

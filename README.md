@@ -13,4 +13,4 @@ If P is the probability of the ant reaching point B for a 6×6 grid, use Monte C
 
 Details and Assumptions
 
-    Assume 10,00010,00010,000 simulations are sufficient enough to compute PPP.
+    Assume 10,000 simulations are sufficient enough to compute PPP.

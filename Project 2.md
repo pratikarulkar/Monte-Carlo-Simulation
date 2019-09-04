@@ -6,4 +6,4 @@ Several projects (stochastic process) solved using monte carlo simulation
 The probability of triangle formed by joining three random points on perimeter of a circle is an acute angle triangle.
 
 
-##Solution:The probability of getting an acute angle is  0.75535
+##Solution:The probability of getting an acute angle is  0.75535(The python code for this simple problem is provided in the same repository.)

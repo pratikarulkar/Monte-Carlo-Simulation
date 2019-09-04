@@ -1,6 +1,7 @@
 import numpy as np
 import math
 import random
+import pandas as pd
 
 ##Creating a function to get the point on a circle whose centre is (0,0) and having radius of 1.
 def generating_points_on_perimeter_circle():
@@ -19,6 +20,13 @@ def generating_points_on_perimeter_circle():
         if x>0:
             x=-1*x
     return x,y
+
+###To check whether 10000 number of simulation are enough to cover all the points on perimeter of circle...
+z=pd.DataFrame(index=range(10000),columns=["x","y"])
+for i in range(10000):
+    z.loc[i,"x"],z.loc[i,"y"]=generating_points_on_perimeter_circle()
+plt.scatter(z["x"],z["y"])
+
 
 def func(simulation=10000):
     z=[]

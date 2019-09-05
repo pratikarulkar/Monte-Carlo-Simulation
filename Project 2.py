@@ -37,18 +37,19 @@ def func(simulation=10000):
         b=generating_points_on_perimeter_circle()
         c=generating_points_on_perimeter_circle()
 
-        z1= (math.sqrt((a[0]-b[0])**2+(a[1]-b[1])**2)**2+math.sqrt((a[0]-c[0])**2+(a[1]-c[1])**2)**2)<math.sqrt((b[0]-c[0])**2+(b[1]-c[1])**2)**2
-        z2= (math.sqrt((a[0]-c[0])**2+(a[1]-c[1])**2)**2+math.sqrt((b[0]-c[0])**2+(b[1]-c[1])**2)**2)<math.sqrt((a[0]-b[0])**2+(a[1]-b[1])**2)**2
-        z3= (math.sqrt((a[0]-b[0])**2+(a[1]-b[1])**2)**2+math.sqrt((b[0]-c[0])**2+(b[1]-c[1])**2)**2)<math.sqrt((a[0]-c[0])**2+(a[1]-c[1])**2)**2
+        z1= (math.sqrt((a[0]-b[0])**2+(a[1]-b[1])**2)**2+math.sqrt((a[0]-c[0])**2+(a[1]-c[1])**2)**2)>math.sqrt((b[0]-c[0])**2+(b[1]-c[1])**2)**2
+        z2= (math.sqrt((a[0]-c[0])**2+(a[1]-c[1])**2)**2+math.sqrt((b[0]-c[0])**2+(b[1]-c[1])**2)**2)>math.sqrt((a[0]-b[0])**2+(a[1]-b[1])**2)**2
+        z3= (math.sqrt((a[0]-b[0])**2+(a[1]-b[1])**2)**2+math.sqrt((b[0]-c[0])**2+(b[1]-c[1])**2)**2)>math.sqrt((a[0]-c[0])**2+(a[1]-c[1])**2)**2
         
 
-        if z1 or z2 or z3:
+        if z1 and z2 and z3:
             acute_triangle+=1
     
     return print("The probability of getting an acute angle is ",acute_triangle/simulation)
     
     
 func()
+    
 
 
          

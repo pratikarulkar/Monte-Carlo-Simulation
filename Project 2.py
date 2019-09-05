@@ -2,6 +2,7 @@ import numpy as np
 import math
 import random
 import pandas as pd
+import matplotlib.pyplot as plt
 
 ##Creating a function to get the point on a circle whose centre is (0,0) and having radius of 1.
 def generating_points_on_perimeter_circle():
